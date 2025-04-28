@@ -24,10 +24,11 @@ export default {
             },
             body: JSON.stringify({
                 username: "VirtualStreets",
-                avatar_url: "https://avatars.githubusercontent.com/in/15368?v=4",
-                content: "<@1366451119525593158>",
+                avatar_url: "https://i.imgur.com/i6QaP6Q.png",
+                content: "<@&1366451119525593158>",
                 embeds: [{
                     color: 11027200,
+                    title: "[gsv-list-tracker:main] 1 new commit",
                     url: payload.head_commit.url,
                     author: {
                         name: "github-actions[bot]",
