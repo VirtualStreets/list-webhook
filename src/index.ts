@@ -23,8 +23,8 @@ export default {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                username: "VirtualStreets",
-                avatar_url: "https://i.imgur.com/i6QaP6Q.png",
+                username: "GSV List Tracker",
+                avatar_url: "https://i.imgur.com/3KMOIxq.png",
                 content: "<@&1366451119525593158>",
                 embeds: [{
                     color: 11027200,
