@@ -1,0 +1,21 @@
+{
+	"name": "vstreets-list-webhook",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.22",
+		"typescript": "^5.8.3",
+		"vitest": "~3.0.9",
+		"wrangler": "^4.13.2"
+	},
+	"dependencies": {
+		"@octokit/webhooks": "^13.8.2"
+	}
+}
