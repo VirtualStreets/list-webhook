@@ -38,7 +38,7 @@ export default {
             }),
         });
         if (!res.ok) {
-            return new Response(await res.text(), { status: 500 })
+            return new Response(await res.text(), { status: 500 });
         }
         return new Response(null, { status: 204 });
     },
