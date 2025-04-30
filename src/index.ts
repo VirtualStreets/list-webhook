@@ -16,6 +16,9 @@ export default {
         if (!(await webhooks.verify(body, signature))) {
             return new Response(null, { status: 401 });
         }
+        if (req.headers.get("x-github-event") === "ping") {
+            return new Response(null, { status: 204 });
+        }
         const payload = JSON.parse(body);
         const res = await fetch(env.WEBHOOK_URL, {
             method: "POST",
