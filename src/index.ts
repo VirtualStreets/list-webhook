@@ -38,7 +38,7 @@ export default {
                         icon_url: "https://avatars.githubusercontent.com/in/15368?v=4"
                     },
                     description: `[\`${payload.head_commit.id.substring(0, 7)}\`](${payload.head_commit.url}): ${new Date(payload.head_commit.timestamp).toLocaleString("en-GB")} UTC
-                    \n\n-# Toggle <@&1366451119525593158> in <id:customize>`
+                    \n-# Toggle <@&1366451119525593158> in <id:customize>`
                 }]
             }),
         });
